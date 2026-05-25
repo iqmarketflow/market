@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms & Conditions | Tradeguidehub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="logo.png" alt="" style="width: 155px;"></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav">
+        <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+
+    <a href="https://inpmz.ttrk.io/click" class="nav-btn">Open Free Account</a>
+  </div>
+</header>
+
+<main class="legal-page">
+  <div class="container">
+    <div class="legal-box">
+
+      <h1>Terms & Conditions</h1>
+
+      <p>
+        Dengan menggunakan website ini, Anda menyetujui bahwa seluruh konten disediakan hanya untuk tujuan informasi.
+      </p>
+
+      <h3>Tidak Memberikan Nasihat Keuangan</h3>
+
+      <p>
+        Website ini tidak memberikan nasihat keuangan, hukum, atau investasi.
+      </p>
+
+      <h3>Tautan Pihak Ketiga</h3>
+
+      <p>
+        Website ini dapat berisi tautan ke website pihak ketiga. Kami tidak bertanggung jawab atas konten atau layanan mereka.
+      </p>
+
+      <h3>Tanggung Jawab Pengguna</h3>
+
+      <p>
+        Pengguna bertanggung jawab untuk meninjau syarat resmi penyedia, risiko, dan persyaratan hukum sebelum mengambil tindakan apa pun.
+      </p>
+
+      <h3>Persyaratan Usia</h3>
+
+      <p>Website ini ditujukan untuk pengguna berusia 18 tahun ke atas.</p>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="https://inpmz.ttrk.io/click">How It Works</a>
+         <a href="index.html#features">Features</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="disclaimer.html">Disclaimer</a>
+    </div>
+
+    <p>Trading melibatkan risiko. Hanya untuk usia 18+.</p>
+
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mainNav = document.getElementById("mainNav");
+
+  menuToggle.addEventListener("click", function () {
+    mainNav.classList.toggle("show");
+  });
+
+  mainNav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      mainNav.classList.remove("show");
+    });
+  });
+</script>
+
+</body>
+</html>
